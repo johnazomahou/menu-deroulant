@@ -1,0 +1,59 @@
+*{
+    margin:0;
+    padding:0;
+}
+.wrapper{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color: #FA1;
+    padding:10px 0;
+}
+ul{
+    list-style: none;
+    display:flex;
+}
+ol{
+    list-style: none;
+
+}
+ul li{
+    width:170px;
+    color:white;
+    text-align:center;
+    position:relative;
+    padding:10px;
+}
+ul li a{
+    text-decoration: none;
+    color:white;
+}
+
+li{
+    cursor:pointer;
+}
+ul ol{
+    display:none;
+    position:absolute;
+    top:44px;
+    left:0;
+    background-color: #FA1;
+}
+ul li:hover{
+    background-color: white;
+    border-radius: 2px;
+    color:black;
+}
+ul li:hover > a {
+color:#FA1
+}
+ul li:hover > ol {
+    display:block;
+    z-index:3;
+    /* plus lindex est eleve il sera position sur le body */
+    /* le z index  c'est lui qui va gerer la position */
+}
+
+body{
+    z-index:1;
+}
